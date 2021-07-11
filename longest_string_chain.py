@@ -7,6 +7,7 @@ def longestStrChain(words):
         l = len(w)
         hash_map[l].add(w)
     print(hash_map)
+    mamory = {}
     def traverse(word, hash_map, count):
         length = len(word)
         tmp_ans = float('-inf')
@@ -19,7 +20,7 @@ def longestStrChain(words):
         return tmp_ans
     ans = float('-inf')
     for j in range(len(words) - 1, -1, -1):
-        print("-")
+        # print("-")
         ans = max(ans, traverse(words[j], hash_map, 0))
     print(ans)
     return ans
