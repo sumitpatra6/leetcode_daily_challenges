@@ -5,6 +5,9 @@ class TreeNode(object):
         self.left = left
         self.right = right
 
+    def __repr__(self):
+        return str(self.val)
+
 get_left = lambda x: 2*x + 1
 get_right = lambda x: 2*x + 2
 
@@ -26,8 +29,3 @@ def inorder(root: TreeNode) -> None:
     inorder(root.left)
     print(root.val)
     inorder(root.right)
-
-######### test
-array = [-2, None, -3]
-root = create_binary_tree_from_array(array)
-inorder(root)

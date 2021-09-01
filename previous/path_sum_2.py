@@ -1,4 +1,4 @@
-from tree_util import TreeNode, create_binary_tree_from_array
+from utils.tree_util import TreeNode, create_binary_tree_from_array
 
 root = create_binary_tree_from_array([-2, None, -3])
 

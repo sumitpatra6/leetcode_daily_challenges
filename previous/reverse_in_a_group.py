@@ -1,4 +1,3 @@
-from linked_list import *
 from typing import Optional
 
 
